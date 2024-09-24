@@ -1,2 +1,2 @@
 #!/bin/bash
-cp un text.html../
+cp -un *.html../
