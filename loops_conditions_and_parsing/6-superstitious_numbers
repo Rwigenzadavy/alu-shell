@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#a Bash script that displays numbers from 1 to 20
+#prints 4 and then bad luck from China for the 4th loop iteration
+#prints 9 and then bad luck from Japan for the 9th loop iteration
+#prints 17 and then bad luck from Italy for the 17th loop iteration
+
+var1="bad luck from china"
+var2="bad luck from Japan"
+var3="bad luck from Italy"
+i="0"
+while [ $i -lt 21 ]; do
+	case $i in
+		4)
+			echo "$i" && echo "$var1"
+			;;
+
+		9)
+			echo "$i" && echo "$var2"
+			;;
+
+		17)
+			echo "$1" && echo "$var3"
+			;;
+
+		*) 
+			echo "$i"
+			;;
+
+		esac
+		((i++))
+
+	done
